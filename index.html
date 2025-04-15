@@ -1,34 +1,57 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Import Fonts & Styles Here -->
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+      <main class="card">
+        
+        <section class="card__image">
+          <img src="./assets/images/avatar-jessica.jpeg" alt="Article Image">
+        </section>
   
-  <title>Frontend Mentor | Social links profile</title>
+        <section class="card__header text-center">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <h1 class="card__tag__text">Jessica Randall</h1>
+          <p>London, United Kingdom</p>
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
+          <label>"Front-end developer and avid reader"</label>
 
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        </section>
+
+        <section class="card_links">
+          
+          <a class="card_link_button" href="https://github.com/josealzate97" target="new">GitHub</a>
+          <a class="card_link_button" href="https://www.frontendmentor.io/profile/josealzate97" target="new">Frontend Mentor</a>
+          <a class="card_link_button" href="https://www.linkedin.com/in/jose-alzate-6b251219a/" target="new">Linkedin</a>
+          <a class="card_link_button" href="https://x.com/__alzate" target="new">Twitter</a>
+          <a class="card_link_button" href="https://www.instagram.com/alzate_dev/" target="new">Instagram</a>
+
+        </section>
+
+      </main>
+
+      <footer class="text-center">
+        <small>
+          Challenge by <a target="new" href="https://www.frontendmentor.io/">Frontend Mentor</a> - Author <a target="new" href="https://github.com/josealzate97">Alzate Dev</a>
+        </small>
+      </footer>
+
+  </body>
+
 </html>

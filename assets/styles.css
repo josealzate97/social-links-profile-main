@@ -1,0 +1,99 @@
+:root {
+    --white: #ffffff;
+    --black: #121212;
+    --green: #c5f82a;
+    --grey-700: #333333;
+    --grey-800: #1f1f1f;
+    --grey-900: #141414;
+}
+
+body {
+    background-color: var(--grey-900);
+    color: var(--white);
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: var(--grey-800);
+    border-radius: 8px;
+    border: 1px solid var(--grey-900);
+    padding: 20px;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.card__image {
+    margin-top: 2em;
+}
+
+.card__image img {
+    border-radius: 50%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.card__header p {
+    font-weight: bold;
+    color: var(--green);
+}
+
+.card_links {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.card_link_button {
+    background-color: var(--grey-700);
+    color: var(--white);
+    width: 80%;
+    height: 35px;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    margin-top: 1em;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+/* Media Query para tablets */
+@media (min-width: 768px) {
+    .card {
+      max-width: 720px;
+      padding: 1em;
+    }
+}
+  
+/* Media Query para desktops */
+@media (min-width: 1024px) {
+    .card {
+        max-width: 1440px;
+        padding: 1em;
+    }
+}
+
+/* Media Query para smartphones */
+@media (max-width: 767px) {
+    .card {
+        max-width: 80%;
+        padding: 1em;
+    }
+}
